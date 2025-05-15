@@ -140,7 +140,7 @@ namespace ConsoleApp2
             result.Add(0); // Константа интегрирования = 0
             for (int i = 0; i < coefficients.Count; i++)
             {
-                result.Add(coefficients[i]); 
+                result.Add(coefficients[i] / (i + 1)); 
             }
             return new Polynomial(result);
 
